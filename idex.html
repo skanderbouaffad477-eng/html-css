@@ -1,59 +1,83 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+    <!-- Police Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Lien vers le CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+    <!-- Navigation -->
     <nav class="navbar">
-      <ul class="nav-list">
-        <li class="nav-item"><a href="#about" class="nav-link">Home</a></li>
-        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-        <li class="nav-item">
-          <a href="#projects" class="nav-link">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a href="#contact" class="nav-link">Contact</a>
-        </li>
-      </ul>
+        <div class="nav-container">
+            <h2 class="logo">Skaander</h2>
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#about" class="nav-link">À propos</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projets</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
     </nav>
 
-    <main class="portfolio-card">
-      <h1 class="main-title">My Portfolio</h1>
+    <!-- Contenu principal -->
+    <main class="main-content">
 
-      <section id="about" class="section">
-        <p class="greeting-text">
-          Hello! My name is <strong>skaander</strong>.
-        </p>
-        <p class="bio-text">
-          I am a web developer learning basic web development skills, and this
-          is my portfolio website.
-        </p>
-      </section>
+        <!-- Section À propos -->
+        <section id="about" class="section about-section">
+            <h1 class="main-title">Bonjour, je suis <span class="highlight">Skaander</span></h1>
+            <p class="bio-text">
+                Je suis un développeur web en formation.  
+                J’apprends HTML, CSS et JavaScript pour créer des sites modernes et agréables.
+            </p>
+        </section>
 
-      <section id="projects" class="section">
-        <h2 class="section-title">My Work</h2>
+        <!-- Section Projets -->
+        <section id="projects" class="section projects-section">
+            <h2 class="section-title">Mes Projets</h2>
 
-        <div class="project-card">
-          <h3>Project 1: HTML Structure</h3>
-          <p>
-            Understanding the basics of HTML and how to construct web pages.
-          </p>
-        </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3 class="project-title">Projet 1 : Structure HTML</h3>
+                    <p class="project-description">
+                        Comprendre les bases du HTML et comment structurer une page web correctement.
+                    </p>
+                </div>
 
-        <div class="project-card">
-          <h3>Project 2: CSS Styling</h3>
-          <p>Understanding the basics of CSS and styling web elements.</p>
-        </div>
-      </section>
+                <div class="project-card">
+                    <h3 class="project-title">Projet 2 : Styling CSS</h3>
+                    <p class="project-description">
+                        Apprendre à styliser les éléments HTML avec CSS pour un design moderne.
+                    </p>
+                </div>
+
+                <div class="project-card">
+                    <h3 class="project-title">Projet 3 : Changeur de couleurs</h3>
+                    <p class="project-description">
+                        Un petit projet interactif avec JavaScript pour changer la couleur d’une boîte.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Contact -->
+        <section id="contact" class="section contact-section">
+            <h2 class="section-title">Contact</h2>
+            <p class="contact-text">Tu veux discuter d’un projet ? Écris-moi !</p>
+            <a href="mailto:skaander@example.com" class="contact-btn">M’envoyer un email</a>
+        </section>
+
     </main>
-  </body>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2026 Skaander - Tous droits réservés</p>
+    </footer>
+
+</body>
 </html>
